@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { QuizContext } from '../../context/QuizContext';
 import QuizCategory from '../QuizCategory/QuizCategory';
 import QuizHeader from '../QuizHeader/QuizHeader';
 import QuizQuestions from '../QuizQuestions/QuizQuestions';
 import { Container } from './QuizContainer.style';
 
 const QuizContainer = () => {
-    const [startFlag,setStartFlag]=useState<boolean>(false);
+    const {startFlag}=useContext<any>(QuizContext);
     return (
         <Container>
             <QuizHeader/>
             {!startFlag?
-            <QuizCategory setStartFlag={setStartFlag}/>:
+            <QuizCategory/>:
             <QuizQuestions/>}
         </Container>
     )
