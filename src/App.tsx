@@ -1,5 +1,5 @@
 import React from 'react';
-import QuizContainer from './components/QuizContainer';
+import QuizContainer from './components/QuizContainer/QuizContainer';
 import { GlobalStyle } from './App.style';
 
 const App = () => {

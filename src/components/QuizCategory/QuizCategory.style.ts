@@ -16,7 +16,11 @@ export const Category = styled.div`
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
         border-radius: 6px;
         padding: 0.8rem;
-    } 
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    }
+    button:hover{
+        opacity: 0.8;
+    }
     select{
         padding: 0.2rem;
     }
@@ -46,8 +50,10 @@ export const Category = styled.div`
         border: 2px solid #6d1912;
     }
     .start-btn{
+        background: linear-gradient(180deg, #ffffff, #ffcc91);
         padding: 0.2rem;
         width:150px;
         align-self: center;
+        color:#ec8400;
     }
 `;
